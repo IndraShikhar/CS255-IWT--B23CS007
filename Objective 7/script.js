@@ -72,3 +72,31 @@ submit.addEventListener("click", function (event) {
   checking();
   displayScore();
 });
+
+for (let Q of Ques) {
+  for (let O of Option) {
+    let opid = "Q" + Q + O;
+    console.log(opid);
+    document.querySelector("." + opid).addEventListener(
+      "mouseover",
+      function () {
+        document.querySelector("." + opid).classList.add("hover");
+      },
+      false
+    );
+
+    document.querySelector("." + opid).addEventListener(
+      "mouseout",
+      function () {
+        document.querySelector("." + opid).classList.remove("hover");
+      },
+      false
+    );
+
+    document.querySelector("." + opid).addEventListener("click", function () {
+      if (document.getElementById(opid).disabled == false) {
+        document.getElementById(opid).checked = true;
+      }
+    });
+  }
+}

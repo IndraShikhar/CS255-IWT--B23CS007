@@ -123,6 +123,12 @@ heading {
   flex-direction: column;
   gap: 10px;
 }
+.Q .option div {
+  display: flex;
+  padding: 0.3rem 0;
+  border-radius: 100rem;
+  transition: background-color 500ms, font-weight 200ms;
+}
 
 .submit,
 .reset {
@@ -148,6 +154,14 @@ heading {
   display: flex;
   gap: 50px;
   justify-content: center;
+}
+
+.hover {
+  transform: scale(1);
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 100rem;
+  transition: all 500ms;
+  cursor: pointer;
 }
 
 .wrong {
