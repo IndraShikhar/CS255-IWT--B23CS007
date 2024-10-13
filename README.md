@@ -11,4 +11,5 @@
 | 5   | Apply CSS                                 | 11/09/2024 |
 | 6   | 15 Question Quiz                          | 11/09/2024 |
 | 7   | Prepare a Question Paper and Implement JS | 09/10/2024 |
-| 8   |                                           |            |
+| 8   | An Arithmatic Calculator with Slideshow   | 09/10/2024 |
+| 9   |                                           |            |
