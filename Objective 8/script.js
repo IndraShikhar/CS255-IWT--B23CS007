@@ -12,16 +12,9 @@ const changebgBody = function () {
 changebgBody();
 setInterval(changebgBody, 2000);
 
-let value1 = document.querySelector(".value1").value;
-let value2 = document.querySelector(".value2").value;
+let value1 = 0;
+let value2 = 0;
 
-document.querySelector("button").addEventListener("click", function () {
-  value1 = document.querySelector(".value1").value;
-  value2 = document.querySelector(".value2").value;
-  console.log(value1);
-  console.log(value2);
-  scoreEl.textContent = result;
-});
 const scoreEl = document.querySelector(".score span");
 
 document.querySelector(".add").addEventListener("click", function () {
