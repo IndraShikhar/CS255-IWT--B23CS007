@@ -1,5 +1,26 @@
 "use strict";
 
+{
+  const imagePaths = [
+    "img/Slideshow-img-0.jpg",
+    "img/Slideshow-img-1.jpg",
+    "img/Slideshow-img-2.jpg",
+    "img/Slideshow-img-3.jpg",
+    "img/Slideshow-img-4.jpg",
+    "img/Slideshow-img-5.jpg",
+    "img/Slideshow-img-6.jpg",
+    "img/Slideshow-img-7.jpg",
+    "img/Slideshow-img-8.jpg",
+  ];
+  const preloadImages = (paths) => {
+    paths.forEach((path) => {
+      const img = new Image();
+      img.src = path;
+    });
+  };
+  preloadImages(imagePaths);
+}
+
 const body = document.querySelector("body");
 let n = 0;
 let result = 0;
